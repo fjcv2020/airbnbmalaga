@@ -2,7 +2,7 @@
 Proyecto sobre viabilidad de negocios y posibilidad de contactos comerciales con los datos de AirBnB en Málaga.
 Los datos los hemos obtenido de IndiseAirBnB(http://insideairbnb.com/get-the-data/)
 
-Hemos utilizado los csv que se encuentran en este repositorio listings.csv y reviews.csv.
+Hemos utilizado los csv que se encuentran en este repositorio listings.csv y reviews.csv.gz
 
 En este proyecto hemos buscado resolver dos preguntas principales según los datos que disponemos:
 ## 1) ¿Cuáles son las 50 propiedades con mayores ingresos mensuales?
