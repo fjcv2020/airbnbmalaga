@@ -32,3 +32,8 @@ Para ello vamos a buscar los propietarios con un mayor número de reseñas que h
     GROUP BY host_id, host_url, host_name
 
     ORDER BY num_sucio_dirty_reviews DESC;
+    
+ Con esto podríamos concluir que los principales hospedadores que podrían ser clientes de una empresa de limpieza serían los siguientes:
+ ![image](https://user-images.githubusercontent.com/64411449/190986035-9e652729-6c25-4b9c-9362-ddf4b31d00bf.png)
+
+
