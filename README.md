@@ -21,16 +21,14 @@ Para responder esta pregunta hemos utilizado SQL, en concreto la siguiente query
 ## 2) ¿A qué negocios podemos ofrecer un servicio de limpieza?
 Para ello vamos a buscar los propietarios con un mayor número de reseñas que hacen referencia a sucio/sucia/dirty. Para ello hemos utilizado la siguiente query:
     
-    SELECT host_id, host_url, host_id, host_name, comments, COUNT(host_name) AS num_sucio_dirty_reviews
-    
+    SELECT host_id, host_url, host_name, COUNT(*) AS num_sucio_dirty_reviews
+
     FROM reviews
-    
+
     INNER JOIN listings ON reviews.listing_id = listing_id
-    
-    WHERE comments LIKE "%dirty%" OR "%suci%"
-    
-    GROUP BY host_id, host_url, host_name, comments
-    
-    HAVING COUNT(host_name) > 1
-    
+
+    WHERE comments LIKE "dirty%" OR comments LIKE "suci%"
+
+    GROUP BY host_id, host_url, host_name
+
     ORDER BY num_sucio_dirty_reviews DESC;
